@@ -11,8 +11,8 @@ namespace MySelfProject
 {
     public class LoginModule
     {
-        static string loginBaseUrl = "http://60.205.205.201";
-        static string RestryBaseUrl = "http://60.205.205.201:8001/login";
+        static string loginBaseUrl = "。。。";
+        static string RestryBaseUrl = "。。。";
         UserToken token;
         public LoginModule(string username, string password)
         {
