@@ -32,14 +32,14 @@ namespace MySelfProject
             ResizeMode = ResizeMode.NoResize;
             Width = windowWid;
             Height = windowHei;
-            CreateDeafautLayout();
-            Content = mainDock;
+            //CreateDeafautLayout();
+            Content = new LoginBoxWidget();
         }
 
         void CreateDeafautLayout()
         {
             Image img = new Image() { Width = windowWid / 2, Height = windowHei};
-            img.Source = new BitmapImage(new Uri("/images/huang.jpg", UriKind.Relative)); ;
+            img.Source = new BitmapImage(new Uri("/images/huang.jpg", UriKind.Relative));
             mainDock.Children.Add(img);
             DockPanel.SetDock(img, Dock.Left);
             TextBox tx = new TextBox() { Width = TextWidth, Height = TextHeight };
